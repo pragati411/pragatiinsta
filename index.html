@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="#"><i class="fas fa-home"></i></a></li>
                     <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
-                    <li><a href="#"><i class="far fa-plus-square"></i></a></li>
+                    <li><a href="11.jpg.jpg"><i class="far fa-plus-square"></i></a></li>
                     <li><a href="#"><i class="far fa-compass"></i></a></li>
                     <li><a href="#"><i class="far fa-heart"></i></a></li>
                     <li><a href="#"><img src="1.jpg" alt=""></a></li>
@@ -36,34 +36,66 @@
             <div class="left-side"> 
                 <div class="story">
                     <div class="stories">
-                        <a href="#"><img src="4.jpg" width="60" height="60" alt=""></a>
+                        <a href="#"><img src="4.jpg" width="60" id="instaimage1" height="60" alt=""></a>
                         <p>pragatishukla411</p>
+                        
 
                     </div>
-                    <div class="stories">
-                        <a href="#"><img src="3.jpg" width="60" height="60" alt=""></a>
+                    <div class="stories" id="instastroy">
+                        <a href="#" class="popupimg"><img src="3.jpg" width="60" height="60" class="beforeimg" id="instaimage2" alt=""
+                            ></a>
+                            <div id="caption"></div>
                         <p>nayanshukla411</p>
 
                     </div>
                     <div class="stories">
-                        <a href="#"><img src="7.jpg" width="60" height="60" alt=""></a>
+                        <a href="story.html"><img src="7.jpg" width="60" height="60" id="instaimage" alt=""></a>
                         <p>jayashukla411</p>
 
                     </div>
                     <div class="stories">
-                        <a href="#"><img src="10.jpg" width="60" height="60" alt=""></a>
+                        <a href="#"><img src="10.jpg" width="60" height="60" id="instaimage" alt=""></a>
                         <p>nayanshukla411</p>
 
                     </div>
                     <div class="stories">
-                        <a href="#"><img src="9.jpg" width="60" height="60" alt=""></a>
-                        <p>nayanshukla411</p>
+                        <a href="#"><img src="9.jpg" width="60" height="60" id="instaimage" alt=""></a>
+                        <p>nayan411</p>
 
                     
 
                     </div>
                     
                     </div>
+                    <!-- div created for insta-stroy hidden -->
+                    <div class="stroy-hidden" id="stroy-instagram" style="border: 1px solid black; height: 400%; width: 100%; background-color: black; display: none; position: absolute; top: 0px; z-index: 10; margin-left: 0px; overflow: hidden;">    
+                        <img src="1.jpg" alt="" width="33" height="33" class="image" style=" border-radius: 50%;
+                        object-fit: contain;
+                        margin-left: 400px;
+                    ">
+                    
+                        <img src="10.jpg" alt=""class="profile-img" width="300px" height="600px" style="display: flex; align-items: center; margin-left: 400px;top: 20px;">   
+                        <span class="yours" style="color: white; display: flex; align-items: center; margin-left: 430px; position: absolute; top: 0px;">pragatishukla411</span>
+                        <span class="time" style="color: white; display:flex; align-items: center; margin-left: 430px; position: absolute; top: 15px;">1 hour</span>
+    
+                        <p style="
+                        display: flex;
+                        position: absolute;
+                        top: 0px;
+                        color: white;
+                        margin-left: 0;
+                    ">Instagram</p>
+    
+
+    
+                        
+                        <button style="  font-size: 30px; position: absolute; margin-left: 1150px; top: 0; display: flex;" id="btn">X</button>
+ 
+                    </div>
+                    
+
+
+
                     <div class="posts">
                         <div class="post-title">
                             <div class="post-left">
@@ -83,18 +115,23 @@
     
                 </div>
                 <div class="post-content">
-                    <img src="5.jpg" alt="ff" width="500" height="300">
+                    <img src="5.jpg" alt="ff" width="600" height="400">
 
                 </div>
                 <div class=" post-footer">
                     <div class="like-share-comment">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-comment"></i>
+                        <i class="far fa-heart" id="like"></i>
+                        
+                        <i class="far fa-comment" id="postcomment"></i>
+                        <!-- <button id="insta-post">
+                            <i class="far fa-comment"></i></button>
+                            <p id="para"></p> -->
+
                         <i class="far fa-paper-plane"></i>
 
                     </div>
                     <div class="save">
-                        <i class="far fa-bookmark"></i>
+                        <i class="far fa-bookmark" id="bookmark"></i>
 
                     </div>
 
@@ -102,14 +139,14 @@
                 <div class="post-footer-content">
                     <p class="likes">100 Likes</p>
                     <p class="name">pragatishukla</p>
-                    <p class="comments">view all 20 comments</p>
+                    <p class="comments" id="">view all 20 comments</p>
                     <p class="posting-time">5 hr ago</p>
 
                 </div>
                 <div class="add-comment">
                     <div class="left-comment">
                         <i class="far fa-smile-beam"></i>
-                        <input type="text" id="add-comment" placeholder="Add a Comment....">
+                        <input type="text" id="add-comment" class="prag" placeholder="Add a Comment....">
                         <div id="post-comment"></div>
 
 
@@ -137,18 +174,20 @@
 
             </div>
             <div class="post-content">
-                <img src="7.jpg" alt="ff" width="500" height="300">
+                <img src="7.jpg" alt="ff" width="600" height="400">
 
             </div>
             <div class=" post-footer">
                 <div class="like-share-comment">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-comment"></i>
+                    <i class="far fa-heart" id="like"></i>
+
+                    <i class="far fa-comment" id="postcomment"></i>
+                    
                     <i class="far fa-paper-plane"></i>
 
                 </div>
                 <div class="save">
-                    <i class="far fa-bookmark"></i>
+                    <i class="far fa-bookmark" id="bookmark"></i>
 
                 </div>
 
@@ -156,15 +195,15 @@
             <div class="post-footer-content">
                 <p class="likes">100 Likes</p>
                 <p class="name">pragatishukla</p>
-                <p class="comments" id="comment">view all 20 comments</p>
+                <p class="comments" id="allcomment">view all 20 comments</p>
                 <p class="posting-time">5 hr ago</p>
 
             </div>
-            <div class="add-comment">
+            <div class="add-comment" id="insta-comment">
                 <div class="left-comment">
                     <i class="far fa-smile-beam"></i>
-                    <input type="text" id="add-comment" placeholder="Add a Comment....">
-                    <div id="post-comment" style="display: none;"></div>
+                    <input type="text" id="add-comment" placeholder="Add a Comment...." ;>
+                    <div id="post-comment"></div>
 
 
                 </div>
@@ -353,6 +392,43 @@
         </section>
 
     </div>
+
+    <div id="Login" class="login_class">
+        <!--Modal Content-->
+        <div class="model-content">
+          <div class="modal-header">
+            <!--<span class="close">&times;</span>-->
+            <h2>Instagram</h2>
+
+          </div>
+
+          <div class="modal-body">
+            <i class='fas fa-users' style='font-size:48px;color:var(--twitter-color);margin: 10px;'></i>
+            <div class="input">
+                <div class="input-container">
+                <i class="fa fa-user icononic"></i> 
+                <span style="border:1px solid black;"></span>  
+            <input type="text" id="user_id" class="input_field" onkeyup="enabling()" placeholder=" Phone Number,Username or email" required><br>
+        </div>
+        <div class="input-container">
+            <i class="fa fa-key icononic"></i>
+            <span style="border:1px solid black;"></span>  
+            <input type="password" id="pwd" class="input_field"
+            placeholder="Password" required>
+             
+            
+          </div>
+          <div class="modal-footer">
+            <button name="btn" class="btn-btn" id="xyz" onclick="trigger()"  disabled >Login</button>
+            <p>Do not have account? Create <a href="https://www.instagram.com/accounts/emailsignup/">Here</a></p> 
+          </div>
+          </div>
+        </div>
+            </div>
+    
+
+
+
 
     <script src="script.js"></script>
 
