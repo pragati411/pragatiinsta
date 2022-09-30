@@ -53,20 +53,7 @@ function commentonpost(){
     Container.style.display= "block";
 
  }) 
-//  let post = document.getElementById("post-container");
-//  let postContainer = document.getElementById("main-insta");
-//  let instatag = document.getElementById("post-post").addEventListener("click", function(){
 
-//     post.style.display= "block";
-//     postContainer.style.display= "none";
-// //  })
-// let postId = document.getElementById("post-start") ;
-//  let main = document.getElementById("post-container");
-//  let images= document.getElementById("postbtn").addEventListener("click", function(){
-//     console.log("hii");
-//      postId.style.display= "block";
-     
-//  })
 
 
  let postDescription = `<div class="posts">
@@ -88,14 +75,14 @@ function commentonpost(){
 
  </div>
  <div class="post-content">`
-//  <img src="${"file"}" alt="ff" width="500" height="400"> */
-   let imgContainer = document.createElement("img");
-   imgContainer.id= "imgBox"
-   imgContainer.width= "500";
-   imgContainer.height= "400";
-   imgContainer.alt= "pragati";
-   imgContainer.src=  "#";
-   console.log("95",imgContainer);
+ let imgContainer = `<img src="${"url"}" alt="ff" width="500" height="400">` 
+//    let imgContainer = document.createElement("img");
+//    imgContainer.id= "imgBox"
+//    imgContainer.width= "500";
+//    imgContainer.height= "400";
+//    imgContainer.alt= "pragati";
+//    imgContainer.src=  "#";
+//    console.log("95",imgContainer);
 
 let postDescription1=`</div>
 
@@ -138,7 +125,7 @@ let postDescription1=`</div>
 let postElem = document.getElementById("pragati");
 console.log(postElem);
 let abc = document.createElement("div");
-abc.innerHTML= postDescription+postDescription1;
+abc.innerHTML= postDescription+postDescription1+imgContainer;
 abc.append(imgContainer);
 console.log("147",abc)
 
@@ -159,16 +146,32 @@ console.log("135",postElem);
     instaPost.style.display= "block";
 
  })
+ let insta2 = document.getElementById("postId")
+ let insta3 = document.getElementById("main-insta")
+ let insta1 = document.getElementById("shareBtn").addEventListener("click", function(){
+    insta2.style.display= "none";
+    insta3.style.display= "block";
+ })
+
+
+
+
 
  let a = document.getElementById("input_field");
   document.getElementById("shareBtn").addEventListener("click", function(){
+
+
     
+//    if(Element.files.length!==0){
     var url = URL.createObjectURL(a.files[0]);
+    // URL.revokeObjectURL(Element.files[0]);
+
+    // console.log(url);
    let src = url;
-    innerHTML.src = url;
-    imgContainer.src = url;
+    textContent.src = url;
+    img.src = url;
 
-
+   
  })
 
 
