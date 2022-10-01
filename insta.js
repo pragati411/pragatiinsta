@@ -1,15 +1,13 @@
-document.getElementById("send-comment").addEventListener("click", fire)
-function fire(){
+document.getElementById("send-comment").addEventListener("click", comment)
+function comment(){
 var xyz    = document.getElementById("post-comment")
 
 var abc = document.getElementById("add-comment").value
-// console.log(abc);
+
 xyz.innerText = abc;
 document.getElementById("add-comment").value = "";
 }
-// function abc(){
-    // document.getElementById("insta-comment").style.display = "block";
-// }
+
 document.getElementById("like").addEventListener("click", likeimage)
 function likeimage() {
     
@@ -90,13 +88,6 @@ function commentonpost(){
 
 
 
-//    let imgContainer = document.createElement("img");
-//    imgContainer.id= "imgBox"
-//    imgContainer.width= "500";
-//    imgContainer.height= "400";
-//    imgContainer.alt= "pragati";
-//    imgContainer.src=  "#";
-//    console.log("95",imgContainer);
 
 let postDescription1=`</div>
 
