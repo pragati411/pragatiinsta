@@ -106,26 +106,33 @@ let postDescription1=`</div>
  <i class="far fa-comment" id="postcomment"></i>
  <i class="far fa-paper-plane"></i>
 
-</div>
-<div class="save">
+</div>`
+
+
+let postfooter=    `<div class="save">
  <i class="far fa-bookmark" id="bookmark"></i>
 
 </div>
 
-</div>
-<div class="post-footer-content">
+</div>`
+ let postcontent= `<div class="post-footer-content">
 <p class="likes">100 Likes</p>
 <p class="name">pragatishukla</p>
-<p class="comments" id="">view all 20 comments</p>
-<div class="add-comment">
+<p class="comments" id="">view all 20 comments</p>`
+
+let postcontent1=   `<div class="add-comment">
 <div class="left-comment">
-    <i class="far fa-smile-beam"></i>
-    <input type="text" id="add-comment" class="prag" placeholder="Add a Comment....">
+    <i class="far fa-smile-beam"></i>`
+
+    
+ let postContent=    `<input type="text" id="add-comment" class="prag" placeholder="Add a Comment....">
     <div id="post-comment"></div> 
 
 
- </div>
- <div  class="right-comment"></div>
+ </div>`
+
+let postcontent2= `<div  class="right-comment"></div>
+
  <p id="send-comment">Post</p>
  `
 
@@ -138,11 +145,45 @@ let postElem = document.getElementById("instagram");
 
 let abc = document.createElement("div");
 let xyz=document.createElement('div');
+xyz.style.fontSize = "22px"
+xyz.style.marginLeft ="10px"
+
+let a = document.createElement("div");
+a.style.marginLeft = "460px"
+a.style.fontSize = "22px"
+a.style.top = "20px"
+
+let  b= document.createElement("div");
+b.style.padding= "10px 10px 10px 10px"
+b.style.marginLeft= "10px"
+b.style.fontSize= "20px"
+
+
+let c= document.createElement("div");
+
+c.style.width=
+c.style.display= "flex";
+c.style.fontSize= "20px"
+
+
+
+let d = document.createElement("div");
+d.style.width= "100%"
+d.style.fontSize= "25px";
+
 xyz.innerHTML=postDescription1
 abc.innerHTML= postDescription
+a.innerHTML= postfooter
+b.innerHTML = postcontent
+c.innerHTML = postcontent1
+d.innerHTML = postContent
 
 abc.append(imgContainer);
 abc.append(xyz);
+abc.append(a);
+abc.append(b);
+abc.append(c)
+abc.append(d);
 
 
 postElem.append(abc);
@@ -174,6 +215,7 @@ postElem.append(abc);
 
 //    }
 //  ]
+//  localStorage.setItem(myObject);
 //  const saveData = (item) => {
 //    let existingData = JSON.parse(localStorage.getItem("myObject"));
  
@@ -200,7 +242,7 @@ postElem.append(abc);
  let instaPost = document.getElementById("main-insta")
  let instaBox = document.getElementById("post-post").addEventListener("click",function(){
     instaId.style.display= "block";
-    instaPost.style.display= "none";
+    instaPost.style.display= "";
 
  })
  let instaBTn = document.getElementById("fileBtn").addEventListener("click",function(){
