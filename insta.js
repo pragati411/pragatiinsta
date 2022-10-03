@@ -26,7 +26,7 @@ document.getElementById("postcomment").addEventListener("click", commentonpost)
 function commentonpost(){
    
 
-    console.log("hii");
+    
 
   let comment =  document.getElementById("add-comment");
   comment.className = "show";
@@ -52,7 +52,7 @@ function commentonpost(){
 
  }) 
 
-
+// post section //
 
  let postDescription = `<div class="posts">
  <div class="post-title">
@@ -72,7 +72,14 @@ function commentonpost(){
      </div>
 
  </div>
- <div class="post-content" id='img_place'></div>`
+
+ 
+<div class="post-content" id='img_place'></div>` 
+
+
+// post image //
+
+
  var imgContainer;
  let a = document.getElementById("input_field");
   document.getElementById("shareBtn").addEventListener("click", function(){
@@ -127,7 +134,7 @@ let postDescription1=`</div>
 
 
     
-let postElem = document.getElementById("pragati");
+let postElem = document.getElementById("instagram");
 
 let abc = document.createElement("div");
 let xyz=document.createElement('div');
@@ -143,6 +150,52 @@ postElem.append(abc);
 
 
 })
+// let postElement = document.getElementById("instagram");
+// let postArrays = [postDescription, imgContainer, postDescription1];
+
+// let postHead =localStorage.getItem("key1");
+// if (postHead !== null){
+
+
+//    imgContainer.value = postHead;
+// }
+// function postSave() {
+//    localStorage.setItem("key1", );
+
+
+
+// }
+ 
+//  const myObject  = [
+//    {
+//       URL: url,
+//       like: "no",
+//       comment: abc,
+
+//    }
+//  ]
+//  const saveData = (item) => {
+//    let existingData = JSON.parse(localStorage.getItem("myObject"));
+ 
+//    if (existingData) {
+//      existingData.push(item);
+//    } else {
+//      existingData = [item];
+//    }
+//  localStorage.setItem("myObject", JSON.stringify(existingData));
+//  };
+ 
+//  const getData = () => {
+//    let existingData = JSON.parse(localStorage.getItem("myObject"));
+   
+//  };
+
+
+
+
+
+   //btn//
+
  let instaId = document.getElementById("postId");
  let instaPost = document.getElementById("main-insta")
  let instaBox = document.getElementById("post-post").addEventListener("click",function(){
@@ -166,7 +219,68 @@ postElem.append(abc);
  // local satroage //
 
 
+ // local satroage //
+
+//  let likeContainer = document.getElementById("like");
+ let commentContainer = document.getElementById("add-comment");
+//  let saveContainer = document.getElementById("bookmark");
+
+//  let like1 = localStorage.getItem("key1");
+//  if (like1 !== null){
+//     likeContainer.value = like1;
+
+//  }
+//  ;
+ let comment1 = localStorage.getItem("comment-input");
  
+ if (comment1 !== null){
+   
+   commentContainer.value =  comment1;
+ }
+//  let save1 = localStorage.getItem("key3")
+//  if (save1 !== null){
+//    saveContainer.value = save1
+//  }
+ 
+
+
+ 
+ function saveInput(e) {
+    
+   //  localStorage.setItem( e.target.name, e.target.value);
+   //  localStorage.setItem( e.target.name, e.target.value);
+    
+    localStorage.setItem( e.target.name, e.target.value);
+    
+    
+  }
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+    
+  
+
+
+      
+ 
+
   
   
 
