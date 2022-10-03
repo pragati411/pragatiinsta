@@ -70,7 +70,7 @@
                     </div>
                     
                     </div>
-                    <div id="pragati">
+                    <div id="instagram">
 
                     </div>
                     <div class="post-insta" id="post-start" style="display:none;">
@@ -104,14 +104,15 @@
                 </div>
                 <div class=" post-footer">
                     <div class="like-share-comment">
-                        <i class="far fa-heart" id="like"></i>
+                <i class="far fa-heart"  id="like" name="likeName" onclick="saveInput(event)"></i>
                         
-                        <i class="far fa-comment" id="postcomment"></i>
+                        <i class="far fa-comment" id="postcomment" name="commentName" onkeyup="saveInput(event)"></i>
+                         
                         <i class="far fa-paper-plane"></i>
 
                     </div>
                     <div class="save">
-                        <i class="far fa-bookmark" id="bookmark"></i>
+                <i class="far fa-bookmark" id="bookmark" name="saveName" onclick="saveInput(event)"></i>
 
                     </div>
 
@@ -126,7 +127,7 @@
                 <div class="add-comment">
                     <div class="left-comment">
                         <i class="far fa-smile-beam"></i>
-                        <input type="text" id="add-comment" class="prag" placeholder="Add a Comment....">
+                        <input type="text" id="add-comment" class="prag" name="comment-input" onkeyup="saveInput(event)" placeholder="Add a Comment....">
                         <div id="post-comment"></div>
 
 
@@ -159,9 +160,9 @@
             </div>
             <div class=" post-footer">
                 <div class="like-share-comment">
-                    <i class="far fa-heart" id="like"></i>
+                    <i class="far fa-heart" id=""></i>
 
-                    <i class="far fa-comment" id="postcomment"></i>
+                    <i class="far fa-comment" id=""></i>
                     
                     <i class="far fa-paper-plane"></i>
 
@@ -415,7 +416,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="insta.js"></script>
 
     
 </body>
