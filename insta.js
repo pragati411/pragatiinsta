@@ -110,28 +110,28 @@ let postDescription1=`</div>
 
 
 let postfooter=    `<div class="save">
- <i class="far fa-bookmark" id="bookmark"></i>
+ <i class="" id="bookmark"></i>
 
 </div>
 
 </div>`
  let postcontent= `<div class="post-footer-content">
-<p class="likes">100 Likes</p>
+<p class="likes"></p>
 <p class="name">pragatishukla</p>
-<p class="comments" id="">view all 20 comments</p>`
+<p class="comments" id=""></p>`
 
 let postcontent1=   `<div class="add-comment">
 <div class="left-comment">
-    <i class="far fa-smile-beam"></i>`
+    <i class=""></i>`
 
     
- let postContent=    `<input type="text" id="add-comment" class="prag" placeholder="Add a Comment....">
-    <div id="post-comment"></div> 
+ let postContent=    `<input type="text" id="add-comment" class="prag" placeholder="Add a comment....">
+    <div id="post-comment"></div>` 
 
+    let postcontent2=
+ `</div>
 
- </div>`
-
-let postcontent2= `<div  class="right-comment"></div>
+ <div  class="right-comment"></div>
 
  <p id="send-comment">Post</p>
  `
@@ -144,19 +144,22 @@ let postcontent2= `<div  class="right-comment"></div>
 let postElem = document.getElementById("instagram");
 
 let abc = document.createElement("div");
+console.log(abc);
 let xyz=document.createElement('div');
 xyz.style.fontSize = "22px"
 xyz.style.marginLeft ="10px"
 
+
 let a = document.createElement("div");
-a.style.marginLeft = "460px"
+a.style.marginLeft = "480px"
 a.style.fontSize = "22px"
-a.style.top = "20px"
+
+a.style.bottom = "30px"
 
 let  b= document.createElement("div");
-b.style.padding= "10px 10px 10px 10px"
 b.style.marginLeft= "10px"
-b.style.fontSize= "20px"
+b.style.fontSize= "18px"
+b.style.fontWeight= "bold"
 
 
 let c= document.createElement("div");
@@ -167,16 +170,27 @@ c.style.fontSize= "20px"
 
 
 
-let d = document.createElement("div");
+let d = document.createElement("input");
+
 d.style.width= "100%"
-d.style.fontSize= "25px";
+d.style.fontSize= "20px"
+d.style.border= "none"
+
+d.style.padding= "20px"
+d.style.outline= "none"
+
+let e = document.createElement("div")
+e.style.marginLeft= "430px"
+e.style.fontSize= "20px"
+
 
 xyz.innerHTML=postDescription1
 abc.innerHTML= postDescription
 a.innerHTML= postfooter
 b.innerHTML = postcontent
 c.innerHTML = postcontent1
-d.innerHTML = postContent
+d.innerHTML = postContent;
+e.innerHTML= postcontent2
 
 abc.append(imgContainer);
 abc.append(xyz);
@@ -184,13 +198,16 @@ abc.append(a);
 abc.append(b);
 abc.append(c)
 abc.append(d);
-
+abc.append(e)
 
 postElem.append(abc);
 
 
 
-})
+
+ let local= localStorage.setItem( abc);
+ console.log(local)
+  } )
 // let postElement = document.getElementById("instagram");
 // let postArrays = [postDescription, imgContainer, postDescription1];
 
@@ -205,7 +222,7 @@ postElem.append(abc);
 
 
 
-// }
+// // }
  
 //  const myObject  = [
 //    {
