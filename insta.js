@@ -205,8 +205,7 @@ postElem.append(abc);
 
 
 
- let local= localStorage.setItem( abc);
- console.log(local)
+ 
   } )
 // let postElement = document.getElementById("instagram");
 // let postArrays = [postDescription, imgContainer, postDescription1];
@@ -224,30 +223,26 @@ postElem.append(abc);
 
 // // }
  
-//  const myObject  = [
-//    {
-//       URL: url,
-//       like: "no",
-//       comment: abc,
+ const myObject  = [
+   {
+         name: URL,
+     like: "no", 
+   comment: postDescription,
+comment0: postDescription1, 
+    
+      
+      
+   }
+ ]
 
-//    }
-//  ]
-//  localStorage.setItem(myObject);
-//  const saveData = (item) => {
-//    let existingData = JSON.parse(localStorage.getItem("myObject"));
- 
-//    if (existingData) {
-//      existingData.push(item);
-//    } else {
-//      existingData = [item];
-//    }
-//  localStorage.setItem("myObject", JSON.stringify(existingData));
-//  };
- 
-//  const getData = () => {
-//    let existingData = JSON.parse(localStorage.getItem("myObject"));
    
-//  };
+ localStorage.setItem("myObject", JSON.stringify(myObject));
+ 
+ 
+ const getData = () => {
+   let Data = JSON.parse(localStorage.getItem("myObject"));
+   
+ };
 
 
 
